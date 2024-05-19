@@ -4,9 +4,10 @@ The `PeritonealEquilibrationT` package is designed to facilitate the analysis an
 
 ## Shiny Application
 
-This package includes a Shiny application that allows users to input their data and visualize the results interactively. You can access the Shiny app at the following link:
+This package includes a Shiny application that allows users to input their data and visualize the results interactively. The data used for the diagnostic plots are based on the Peritoneal Equilibration Test developed by Twardowski. You can access the Shiny app at the following link:
 
 [Peritoneal Equilibration Test Shiny App](https://vtj3ex-marta0bello.shinyapps.io/shinyapp/)
+
 
 ## Installation
 

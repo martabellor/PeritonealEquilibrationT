@@ -1,0 +1,12 @@
+name: shinyapp
+title: shinyapp
+username: vtj3ex-marta0bello
+account: vtj3ex-marta0bello
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12030061
+bundleId: 8634063
+url: https://vtj3ex-marta0bello.shinyapps.io/shinyapp/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

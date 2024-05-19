@@ -43,6 +43,3 @@ Marta Bellor Rego
 
 ```
 
-Este README.md proporciona una descripción concisa de lo que hace el paquete, cómo instalarlo y cómo ejecutar la aplicación Shiny. Además, incluye un enlace directo a la aplicación Shiny hospedada en shinyapps.io.
-
-Guarda este contenido en un archivo llamado `README.md` en el directorio raíz de tu paquete `PeritonealEquilibrationT`. Esto ayudará a los usuarios a entender rápidamente el propósito del paquete y cómo utilizarlo.

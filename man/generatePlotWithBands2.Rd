@@ -17,6 +17,8 @@ generatePlotWithBands2(data, title, yAxisLabel, bandsData)
 }
 \value{
 ggplot object.
+
+ggplot object.
 }
 \description{
 This function generates a glucose plot with bands.

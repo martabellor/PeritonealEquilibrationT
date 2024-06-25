@@ -7,6 +7,7 @@
 #' @param weight Weight in kilograms.
 #' @param height Height in centimeters.
 #' @return BMI value.
+#' @importFrom stats na.omit
 #' @export
 calculate_bmi <- function(weight, height) {
   bmi <- weight / (height / 100)^2
@@ -50,6 +51,8 @@ calculate_sodium_sieving <- function(sodium0h, sodium1h) {
 #' @param yAxisLabel Y-axis label.
 #' @param bandsData Data for the bands.
 #' @return ggplot object.
+#' @importFrom ggplot2 ggplot aes geom_ribbon geom_line geom_point labs theme_minimal theme element_line element_rect element_blank element_text
+#' @importFrom stats na.omit
 #' @export
 generatePlotWithBands <- function(timePoints, measurementPoints, bloodValue, title, yAxisLabel, bandsData) {
   normalizedValues <- na.omit(measurementPoints / bloodValue)
@@ -82,6 +85,8 @@ generatePlotWithBands <- function(timePoints, measurementPoints, bloodValue, tit
 #' @param yAxisLabel Y-axis label.
 #' @param bandsData Data for the bands.
 #' @return ggplot object.
+#' @return ggplot object.
+#' @importFrom ggplot2 ggplot aes geom_ribbon geom_line geom_point labs theme_minimal theme element_line element_rect element_blank element_text
 #' @export
 generatePlotWithBands2 <- function(data, title, yAxisLabel, bandsData) {
   ggplot(data, aes(x = time)) +
@@ -114,3 +119,7 @@ runPeritonealEquilibriumTestApp <- function() {
 
   shiny::runApp(appDir, display.mode = "normal")
 }
+
+# Declare global variables
+utils::globalVariables(c("time", "very_low", "low", "medium_low", "medium_high", "high", "normalized"))
+
